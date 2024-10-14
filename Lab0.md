@@ -1,6 +1,10 @@
 # Lab 0 
 ## Nhúng hình
-- UML quá trình phát triển của cây
-[nhấn để xem](https://www.planttext.com/api/plantuml/png/N9513i8W44NtSuekTT4Bi31TwG7inYMHiIMXO836gF5aBZoILv2XBHHPmP_ty_-4x_lJEC-j7mS5PyMTguw8edf25Kw7Tf2QUzniMTILr1syO4MIij3Mt0WycL5thKNCP9B-q99Q0TVUUEFkslVev2Fa9zlUZj8xCiTRTiVdRBzmfLfpi25MBDs9ZBlLzIvNP-ib8Sd4vD9iBWnP8g2S9NagmegsC8bBT9YM5G4Qr88-uGS00F__0m00)
+- Usecase ngân hàng
+  [usecase](https://www.planttext.com/api/plantuml/png/SoWkIImgAStDuKfCBialKWWjJYtY0X4Akhfs2XfEYNdP2iMLnIMfkPeOmgb5PPd9gPfSN0wfUIaW8m00)
+- Class sản phẩm
+  [class](https://www.planttext.com/api/plantuml/png/SoWkIImgAStDuKhEIImkLWWeoayfJIvHgEPIKD1LA83mF5si53BpIi12UOcvgLOAmIL5cNdfK3MPoK2Hj9pyH90AROMKpEA2dCHApxoqV0rDAuMo_CmKhbekXzIy590r0000)
+- Package quản lý sách
+  [package](https://www.planttext.com/api/plantuml/png/SoWkIImgAStDuIf8JCvEJ4zLK0eiVRXhSPv2pk6z2i675oPdA2bKSoae9ESa5XShEENdPuEv2Wgw2YMP9JcfLWh19KMPUUbGiSJIaepy8XH1RONqr1ANr9B4p9nY3KqagLekkBcEO6rma_CISrCnpV03Yg8PKClba9gN0d8-0000)
 
 

@@ -1,0 +1,19 @@
+1. Cấu trúc phần mềm
+1. Phân tích kiến trúc
+a) Đề xuất kiến trúc
+Kiến trúc đề xuất: Client-Server
+Lý do lựa chọn:
+Phân quyền rõ ràng: Kiến trúc Client-Server phân quyền giữa người dùng (client) và phần xử lý trung tâm (server), đảm bảo tính bảo mật và hạn chế truy cập không hợp lệ.
+Khả năng mở rộng: Kiến trúc Client-Server cho phép mở rộng dễ dàng bằng cách thêm client hoặc nâng cấp server khi số lượng người dùng tăng.
+Dễ bảo trì: Mọi logic xử lý được quản lý tại server giúp dễ cập nhật và bảo trì mà không cần thay đổi trên tất cả các client.
+Đáp ứng yêu cầu nghiệp vụ: Giúp bảo mật thông tin nhân viên, xử lý tính lương tự động và tương thích với cơ sở dữ liệu DB2 hiện tại của Acme.
+b) Ý nghĩa từng thành phần trong kiến trúc
+Client:
+Giao diện người dùng (UI): Để nhân viên và quản trị viên có thể tương tác với hệ thống, bao gồm nhập timecard, chọn phương thức thanh toán và xem báo cáo.
+ClientController: Xử lý các tương tác từ UI và gửi yêu cầu đến server.
+Server:
+APIServer: Cung cấp các API để nhận và phản hồi yêu cầu từ client.
+BusinessLogic: Nơi thực hiện các logic tính toán nghiệp vụ chính của hệ thống như tính lương, lưu thông tin phương thức thanh toán, và chuẩn bị báo cáo.
+DataAccess: Quản lý truy xuất và cập nhật dữ liệu từ database, bao gồm dữ liệu nhân viên, timecard, và tương tác với cơ sở dữ liệu DB2 khi cần.
+2. Phân tích
+3. Phân tích ca sử dụng

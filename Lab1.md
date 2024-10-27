@@ -20,44 +20,34 @@ c) sơ đồ package:
 
 ## 2. Phân tích cơ chế:
 
-Employee (Nhân viên)
+  - Employee (Nhân viên) : Hệ thống cần lưu trữ thông tin về nhân viên và đảm bảo rằng dữ liệu của mỗi nhân viên chỉ có thể được truy cập và chỉnh sửa bởi chính họ hoặc Payroll Administrator.
+  Phân tích cơ chế: Persistence, Security
+  
+  - Timecard (Thẻ chấm công): Dữ liệu về số giờ làm việc hàng ngày của nhân viên cần được lưu trữ và bảo mật, chỉ cho phép nhân viên liên quan và Payroll Administrator truy cập.
+  Phân tích cơ chế: Persistence, Security
+  
+  - PurchaseOrder (Đơn đặt hàng): Các đơn đặt hàng ghi lại doanh số của nhân viên cần được lưu trữ và bảo mật, chỉ cho phép nhân viên liên quan và Payroll Administrator truy cập.
+  Phân tích cơ chế: Persistence, Security
+  
+  - Paycheck (Phiếu lương): Hệ thống cần lưu giữ thông tin về phiếu lương để truy xuất và đảm bảo bảo mật thông tin lương của mỗi nhân viên.
+  Phân tích cơ chế: Persistence, Security
+  
+  - ProjectManagementDatabase (Cơ sở dữ liệu Quản lý Dự án): Vì hệ thống phải truy cập dữ liệu từ cơ sở dữ liệu hiện có (DB2 trên IBM mainframe) mà không cập nhật, nên cần một cơ chế giao tiếp với cơ sở dữ liệu này.
+  Phân tích cơ chế: Legacy Interface
+  
+  - Payment Method (Phương thức thanh toán): Cần đảm bảo bảo mật khi lưu thông tin phương thức thanh toán và thực hiện giao dịch, cũng như tích hợp với các hệ thống ngân hàng cho giao dịch gửi tiền trực tiếp.
+  Phân tích cơ chế: Security, External Interface
+  
+  - Payroll Scheduling (Lịch trình trả lương): Cần có cơ chế tự động hóa để chạy hệ thống trả lương vào các ngày quy định (mỗi thứ Sáu và ngày làm việc cuối cùng của tháng).
+  Phân tích cơ chế: Scheduling, Automation
+  
+  - Reporting (Báo cáo): Cơ chế cần cho phép nhân viên tạo các báo cáo về thời gian làm việc, số giờ ghi nhận cho các dự án, và tổng số lương đã nhận, đồng thời bảo mật thông tin cá nhân.
+  Phân tích cơ chế: Persistence, Security, Query Interface
+  
+  - Payroll Administrator (Quản trị viên Hệ thống Lương): Cần cơ chế bảo mật và lưu trữ để Payroll Administrator có thể cập nhật và quản lý thông tin nhân viên, cũng như tạo các báo cáo quản trị.
+  Phân tích cơ chế: Persistence, Security, Administrative Interface
+  
+  - BankSystem (Hệ thống Ngân hàng): Cơ chế kết nối với hệ thống ngân hàng để thực hiện giao dịch chuyển khoản cho các nhân viên chọn phương thức thanh toán qua tài khoản ngân hàng.
+  Phân tích cơ chế: External Interface
 
-Cơ chế phân tích: Persistence, Security
-Giải thích: Hệ thống cần lưu trữ thông tin về nhân viên và đảm bảo rằng dữ liệu của mỗi nhân viên chỉ có thể được truy cập và chỉnh sửa bởi chính họ hoặc Payroll Administrator.
-Timecard (Thẻ chấm công)
-
-Cơ chế phân tích: Persistence, Security
-Giải thích: Dữ liệu về số giờ làm việc hàng ngày của nhân viên cần được lưu trữ và bảo mật, chỉ cho phép nhân viên liên quan và Payroll Administrator truy cập.
-PurchaseOrder (Đơn đặt hàng)
-
-Cơ chế phân tích: Persistence, Security
-Giải thích: Các đơn đặt hàng ghi lại doanh số của nhân viên cần được lưu trữ và bảo mật, chỉ cho phép nhân viên liên quan và Payroll Administrator truy cập.
-Paycheck (Phiếu lương)
-
-Cơ chế phân tích: Persistence, Security
-Giải thích: Hệ thống cần lưu giữ thông tin về phiếu lương để truy xuất và đảm bảo bảo mật thông tin lương của mỗi nhân viên.
-ProjectManagementDatabase (Cơ sở dữ liệu Quản lý Dự án)
-
-Cơ chế phân tích: Legacy Interface
-Giải thích: Vì hệ thống phải truy cập dữ liệu từ cơ sở dữ liệu hiện có (DB2 trên IBM mainframe) mà không cập nhật, nên cần một cơ chế giao tiếp với cơ sở dữ liệu này.
-Payment Method (Phương thức thanh toán)
-
-Cơ chế phân tích: Security, External Interface
-Giải thích: Cần đảm bảo bảo mật khi lưu thông tin phương thức thanh toán và thực hiện giao dịch, cũng như tích hợp với các hệ thống ngân hàng cho giao dịch gửi tiền trực tiếp.
-Payroll Scheduling (Lịch trình trả lương)
-
-Cơ chế phân tích: Scheduling, Automation
-Giải thích: Cần có cơ chế tự động hóa để chạy hệ thống trả lương vào các ngày quy định (mỗi thứ Sáu và ngày làm việc cuối cùng của tháng).
-Reporting (Báo cáo)
-
-Cơ chế phân tích: Persistence, Security, Query Interface
-Giải thích: Cơ chế cần cho phép nhân viên tạo các báo cáo về thời gian làm việc, số giờ ghi nhận cho các dự án, và tổng số lương đã nhận, đồng thời bảo mật thông tin cá nhân.
-Payroll Administrator (Quản trị viên Hệ thống Lương)
-
-Cơ chế phân tích: Persistence, Security, Administrative Interface
-Giải thích: Cần cơ chế bảo mật và lưu trữ để Payroll Administrator có thể cập nhật và quản lý thông tin nhân viên, cũng như tạo các báo cáo quản trị.
-BankSystem (Hệ thống Ngân hàng)
-
-Cơ chế phân tích: External Interface
-Giải thích: Cơ chế kết nối với hệ thống ngân hàng để thực hiện giao dịch chuyển khoản cho các nhân viên chọn phương thức thanh toán qua tài khoản ngân hàng.
-3. Phân tích ca sử dụng
+## 3. Phân tích ca sử dụng Payment

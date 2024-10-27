@@ -15,7 +15,8 @@ b) Ý nghĩa từng thành phần trong kiến trúc
   - Lớp Lưu trữ (Persistence Layer): Quản lý việc truy cập và lưu trữ dữ liệu, ẩn chi tiết lưu trữ cho các lớp trên.
   - Lớp Cơ sở Dữ liệu (Database Layer): Lưu trữ thực tế dữ liệu trong các bảng hoặc tài liệu.
 
-c) sơ đồ package: [sơ đổ package](https://www.planttext.com/api/plantuml/png/VPB1IiCm6CVlVOgFdkfXB-11fYjCM1d2vkvP5j9WJKgJ24LszkJ19z0XeeZ3dTk3XqBV8szYikesMIU4v93lzqk-VzAL2cLANoTUYl0LeWJy0JF55mULLGM6SrFUWOfD-S0fZ3DJF4DIh-e5fpxSUW1sRC2nALxNLTK7Zs5QFUKGN6H44gwGOe93X7AI7JKW04wGbD1dI8ICy27LWeMQKxitzrgqfdopyyoKBtO9JjCqOVYmrYhr8BRUIqx_iqQ2CWn36ZFRQ0etLW_1cPQC4sjfTjlzE9venv5qeW_QwvMsGPhoqoP1Cica8XoJLkCW5f7Mu-oWh5SlG9ho4KBdIzo5DGGXKcYAPBkp9qOYr97Def7QUIzlw7HEzkA2O_3xfbmooAjt3TZUGFkMtgjhuDqiVj1x1iawFRwRRUFuK-uCczuTR9VSdRXCtMl_Tkh8RPc3jisjgHW9KDK2GsyKHhxdpRqkuJFtixy1)
+c) sơ đồ package: 
+[sơ đổ package](https://www.planttext.com/api/plantuml/png/V9B1IiCm6CVlVOgFdkfXB-11fYjCM1d2vkvP5jfWJKgJ24LszkJ19z0XeeZ3dPV33eM-Hvx0Lp1PTPki4q9ooFVx9Ty_-TAhjf0eb-ewzJA4hr1CmEzHirmna7cvn71kz1t8nEW75iCmDyjdIAj5DMEn3xSUW1qRS6YMh-kgyeCbC2wV2WWkSY88aqXIpY121ScFQX00fqW8w5B4GqfOFrQSXeh5Tc_gDMYDVhFpnEWNkmIdMPPIV5XhbQgNMEybY_-pHZoc6FfnGcsZ6TnOFGHdIb16hANURVRZPAGSHxAHEcYl5ie6QVIdJOBaWWf962QDnbx28wM6-K5Pfvg1CFeHGkTBtOKL126IQ8n4ixF31pnKaSsYbjfvBszejKxsue9ZyBj6poaKvRi2R6-WV4llrTNmRXO_w3s5T9qUsyssTlmfTuPDxmwsI-5Ed6VkjNyxTUIsp47RvjPKWZZ8SeQXCmWZt_EcNfkmYVlPtm000F__0m00)
 2. Phân tích cơ chế:
 
 Employee (Nhân viên)

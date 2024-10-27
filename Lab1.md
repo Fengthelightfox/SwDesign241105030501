@@ -1,4 +1,4 @@
-# 1. Phân tích kiến trúc
+## 1. Phân tích kiến trúc
 a) Đề xuất kiến trúc
 
   - Kiến trúc đề xuất: Kiến trúc phân tầng (Layer)
@@ -17,7 +17,8 @@ b) Ý nghĩa từng thành phần trong kiến trúc
 
 c) sơ đồ package: 
 [sơ đổ package](https://www.planttext.com/api/plantuml/png/V9B1IiCm6CVlVOgFdkfXB-11fYjCM1d2vkvP5jfWJKgJ24LszkJ19z0XeeZ3dPV33eM-Hvx0Lp1PTPki4q9ooFVx9Ty_-TAhjf0eb-ewzJA4hr1CmEzHirmna7cvn71kz1t8nEW75iCmDyjdIAj5DMEn3xSUW1qRS6YMh-kgyeCbC2wV2WWkSY88aqXIpY121ScFQX00fqW8w5B4GqfOFrQSXeh5Tc_gDMYDVhFpnEWNkmIdMPPIV5XhbQgNMEybY_-pHZoc6FfnGcsZ6TnOFGHdIb16hANURVRZPAGSHxAHEcYl5ie6QVIdJOBaWWf962QDnbx28wM6-K5Pfvg1CFeHGkTBtOKL126IQ8n4ixF31pnKaSsYbjfvBszejKxsue9ZyBj6poaKvRi2R6-WV4llrTNmRXO_w3s5T9qUsyssTlmfTuPDxmwsI-5Ed6VkjNyxTUIsp47RvjPKWZZ8SeQXCmWZt_EcNfkmYVlPtm000F__0m00)
-2. Phân tích cơ chế:
+
+## 2. Phân tích cơ chế:
 
 Employee (Nhân viên)
 

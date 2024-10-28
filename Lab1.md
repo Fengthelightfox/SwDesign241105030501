@@ -51,3 +51,39 @@ c) sơ đồ package:
   Phân tích cơ chế: External Interface
 
 ## 3. Phân tích ca sử dụng Payment
+a) Các lớp chính:
+  - Employee (Nhân viên): Chứa các thuộc tính như EmployeeID, Name, và PaymentMethod. Lớp này chịu trách nhiệm lưu trữ thông tin của nhân viên và các phương thức cần thiết để cập nhật phương thức thanh toán.
+
+  - PaymentMethod (Phương thức thanh toán): Lớp này sẽ lưu trữ các thuộc tính như MethodType (pick up, mail, direct deposit) và các thông tin liên quan nếu chọn "mail" (địa chỉ) hoặc "direct deposit" (tên ngân hàng, số tài khoản).
+
+  - PaymentService (Dịch vụ): Có nhiệm vụ yêu cầu, xác nhận, và cập nhật phương thức thanh toán của nhân viên. Các thuộc tính bao gồm MethodType và các phương thức tương tác với lớp Employee và PaymentMethod để cập nhật thông tin.
+
+b) Quan hệ:
+  - Employee và PaymentMethod có quan hệ 1-1 vì mỗi nhân viên chỉ chọn một phương thức thanh toán.
+  - PaymentService tương tác với Employee và PaymentMethod để yêu cầu lựa chọn phương thức, kiểm tra thông tin và cập nhật dữ liệu.
+
+c) Thuộc tính:
+  - Employee:
+    + EmployeeID: Mã nhân viên
+    + Name: Tên nhân viên
+    + PaymentMethod: Phương thức thanh toán
+  - PaymentMethod:
+    + MethodType: Kiểu phương thức thanh toán ("pick up", "mail", "direct deposit")
+    + MailAddress: Địa chỉ nhận phiếu lương (nếu chọn "mail")
+    + BankName: Tên ngân hàng (nếu chọn "direct deposit")
+    + AccountNumber: Số tài khoản ngân hàng (nếu chọn "direct deposit")
+  - PaymentService:
+    + selectPaymentMethod(): Phương thức lựa chọn và cập nhật phương thức thanh toán
+    + validateEmployeeInfo(): Kiểm tra tính hợp lệ của thông tin nhân viên
+    + updatePaymentInfo(): Cập nhật thông tin phương thức thanh toán
+
+d) Biểu đồ ca sử dụng: [Payment](https://www.planttext.com/api/plantuml/png/X58_IyD05D_pAHwTsi4lq46AucPA8C7zI8xUqUJbI2-5p0uEuYZEKKGi20fEkQ53eD_ZFe5VmRj8QcAZBWVltk_VUxmFjPsj9CbadiGE2MMQmLaYuhIWr17ccuTS49GmyaYHK9G-pTOyf2CWA_3yFgGbDarJ30guLB8q-kAxZjDouEZOw4qXP5hTeCTshxiI5u6fdiE04MH1MfSudZYURw66DeKbr-eo2J8IiFhTW3dEMNsF5xpUM6GNMjIR_5HNJ_aVoWTHSbmOpgFubHEdkYfvlztrRUGwvlkS9rhT-aOUngYhRGwXwUAF16udmG0nqkgDWCpChF1VZgarU15pPbwvr_eUf8s1Tdsmjli38_8W8DRgQd8m4BEBH-jpVQxL7H_YBnkRdioCOcJFx1C00F__0m00)
+
+e) Giải thích:
+  - Bắt đầu: Employee gửi yêu cầu chọn phương thức thanh toán đến PaymentService.
+  - Kiểm tra thông tin: PaymentService xác thực thông tin nhân viên.
+  - Chọn phương thức thanh toán: Nếu hợp lệ, PaymentService yêu cầu nhân viên chọn phương thức thanh toán và nhận lại phương thức đã chọn.
+  - Yêu cầu thông tin bổ sung: PaymentService yêu cầu thêm thông tin địa chỉ hoặc ngân hàng, tùy thuộc vào phương thức thanh toán.
+  - Cập nhật thông tin thanh toán: PaymentService cập nhật phương thức thanh toán đã chọn vào hồ sơ nhân viên.
+  - Xử lý lỗi: Nếu thông tin nhân viên không hợp lệ, PaymentService gửi thông báo lỗi.
+Biểu đồ mô tả các bước để chọn và lưu trữ phương thức thanh toán chính xác cho nhân viên sau khi đã xác thực.

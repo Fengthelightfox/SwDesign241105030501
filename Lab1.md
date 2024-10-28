@@ -77,7 +77,8 @@ c) Thuộc tính:
     + validateEmployeeInfo(): Kiểm tra tính hợp lệ của thông tin nhân viên
     + updatePaymentInfo(): Cập nhật thông tin phương thức thanh toán
 
-d) Biểu đồ ca sử dụng: [Payment](https://www.planttext.com/api/plantuml/png/X58_IyD05D_pAHwTsi4lq46AucPA8C7zI8xUqUJbI2-5p0uEuYZEKKGi20fEkQ53eD_ZFe5VmRj8QcAZBWVltk_VUxmFjPsj9CbadiGE2MMQmLaYuhIWr17ccuTS49GmyaYHK9G-pTOyf2CWA_3yFgGbDarJ30guLB8q-kAxZjDouEZOw4qXP5hTeCTshxiI5u6fdiE04MH1MfSudZYURw66DeKbr-eo2J8IiFhTW3dEMNsF5xpUM6GNMjIR_5HNJ_aVoWTHSbmOpgFubHEdkYfvlztrRUGwvlkS9rhT-aOUngYhRGwXwUAF16udmG0nqkgDWCpChF1VZgarU15pPbwvr_eUf8s1Tdsmjli38_8W8DRgQd8m4BEBH-jpVQxL7H_YBnkRdioCOcJFx1C00F__0m00)
+d) Biểu đồ ca sử dụng: 
+[Payment](https://www.planttext.com/api/plantuml/png/X58_IyD05D_pAHwTsi4lq46AucPA8C7zI8xUqUJbI2-5p0uEuYZEKKGi20fEkQ53eD_ZFe5VmRj8QcAZBWVltk_VUxmFjPsj9CbadiGE2MMQmLaYuhIWr17ccuTS49GmyaYHK9G-pTOyf2CWA_3yFgGbDarJ30guLB8q-kAxZjDouEZOw4qXP5hTeCTshxiI5u6fdiE04MH1MfSudZYURw66DeKbr-eo2J8IiFhTW3dEMNsF5xpUM6GNMjIR_5HNJ_aVoWTHSbmOpgFubHEdkYfvlztrRUGwvlkS9rhT-aOUngYhRGwXwUAF16udmG0nqkgDWCpChF1VZgarU15pPbwvr_eUf8s1Tdsmjli38_8W8DRgQd8m4BEBH-jpVQxL7H_YBnkRdioCOcJFx1C00F__0m00)
 
 e) Giải thích:
   - Bắt đầu: Employee gửi yêu cầu chọn phương thức thanh toán đến PaymentService.
@@ -87,3 +88,25 @@ e) Giải thích:
   - Cập nhật thông tin thanh toán: PaymentService cập nhật phương thức thanh toán đã chọn vào hồ sơ nhân viên.
   - Xử lý lỗi: Nếu thông tin nhân viên không hợp lệ, PaymentService gửi thông báo lỗi.
 Biểu đồ mô tả các bước để chọn và lưu trữ phương thức thanh toán chính xác cho nhân viên sau khi đã xác thực.
+
+## 4. Phân tích ca sử dụng Maintain Timecard:
+a) Các lớp chính:
+  - Employee: Là nhân viên sử dụng hệ thống. Chứa thuộc tính nhân viên
+  - Timecard: Là phiếu chấm công, chứa các thông tin về ngày và số giờ làm việc của nhân viên.
+  - ChargeNumber: Là các số mã dự án mà nhân viên có thể ghi nhận giờ làm việc.
+  - TimecardSystem: Hệ thống quản lý chấm công, thực hiện các thao tác liên quan đến phiếu chấm công.
+  - ProjectManagementDatabase: Đối tượng cung cấp danh sách mã dự án từ hệ thống quản lý dự án.
+
+b) Quan hệ:
+  - Employee - Timecard: Mỗi Employee chỉ quản lý một Timecard trong kỳ lương hiện tại.
+  - TimecardSystem - ProjectManagementDatabase: TimecardSystem truy cập ProjectManagementDatabase để lấy danh sách ChargeNumber.
+  - Timecard - ChargeNumber: Timecard chứa nhiều ChargeNumber mà nhân viên đã ghi lại số giờ làm.
+
+c) Thuộc tính:
+  - Employee: Gồm tên, ID và các phương thức yêu cầu và gửi Timecard.
+  - Timecard: Gồm các thông tin ngày tháng, trạng thái, số giờ làm việc cho từng ChargeNumber và các phương thức như kiểm tra giới hạn giờ làm, lưu, hoặc khóa   chỉnh sửa khi đã gửi.
+  - TimecardSystem: Quản lý luồng chính của ca sử dụng, từ tạo/lấy Timecard, lấy mã dự án, đến xác nhận và lưu trữ.
+  - ProjectManagementDatabase: Chỉ chứa danh sách mã dự án.
+
+d) Sơ đồ Sequence: 
+[Maintain Timecard](https://www.planttext.com/api/plantuml/png/b5FFIiCm7BxtANxix5wWK1auKR2Ae1UFMHQQQfEMDXLwzk31q_3WILWH4PI1eY0q1myHtoDFu2kORdIpcWqz1PBVz-NxatpAjrucK2fo5Za8YpY5JPP4SK68avZj48S9uW8EGqOmIeS7HIO8Qntjf_4nmM8NSHGGHhZe8u46ABCJE8xdWPzhUSa3m5HDE7LXGrUJ13Wros8IFCzfj41t_OS45uxKVGvOLtVv39b0fkK8Wb3BQuZKc3bjn7SE5tnTtHP0OrszOX2wAcCGpSNKK9ppwMve8Lbgk65bwWQ6MZw1AhcpT1gw5bDzn2bagiIqnT88ZRIyiabgSd9XssW_CzgfbXTM2a7LYub-e8pZ6PqrPHVsVeMAgGb9omS3RrcSDsPpv7yyvlDef-rlQJa9_rppR7fEiAhJrZFYWHeN4DJeDH2fwTB8DkRB43hl8oD_UjHPIRXJXyaC6lqd1kjpgrCuLMCueUePBUpq21_MN-yB003__mC0)

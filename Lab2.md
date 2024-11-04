@@ -8,7 +8,7 @@ a) Lớp phân tích chính
   Student: Đại diện cho sinh viên trong hệ thống.
   Billing System: Hệ thống thanh toán, nhận thông báo để lập hóa đơn cho sinh viên đã đăng ký thành công.
 
-b) Sơ đồ tuần tự: (nhấn vào đây)[https://www.planttext.com/api/plantuml/png/T5H1Ri8m4Bpd5IjESEYfDzGYIbgfN4f5-83hRC3gnevi1uctzT0dzGjTXpZ48AmeKJ8xdjbPAty_lqldXVLjJPcGtbZOubuvRuND6lwkf6g4zZ29dxqokZWvZ_K4X8DjaPRbfhKEDrM5LkbzLv9lqf927h1i2JkmoD-lKD-MgFqPtANOIX7nhYFvLP5bWs5uMB2VEKWo3iT-fxDiMmpe0UNtkXhZQ_rfpTwYSrmfoCCO1AMXwU4CUFLRHTKvl2hNa3Yb6GLQt7NIyKhaWDLHU0of8JbCTRJnDrfaJ0DlGXuW3RO3BsRoJTyNArRCDVP5btsIJDIU-ugCqDzG1k8e58alGX2w17UcE5Wym-F022lVnFnoKzVAW-pyWBasbBgEiqxWYs-U_Xm8ZqYnS6GqBYwAsWKIIXzQGAivI0Ug0erOOfdGKAVlevJ2sKYpl98ScJ-d4OPoPjpfOiNE74lsntEjApCjThExZhhHVvWmwNuAV0tHFrqbF_8kj4IwQpvAnEVDEKrEMnS4JxoLaZrKBT4f2ymbtyBFu1y00F__0m00]
+b) Sơ đồ tuần tự: [nhấn vào đây](https://www.planttext.com/api/plantuml/png/T5H1Ri8m4Bpd5IjESEYfDzGYIbgfN4f5-83hRC3gnevi1uctzT0dzGjTXpZ48AmeKJ8xdjbPAty_lqldXVLjJPcGtbZOubuvRuND6lwkf6g4zZ29dxqokZWvZ_K4X8DjaPRbfhKEDrM5LkbzLv9lqf927h1i2JkmoD-lKD-MgFqPtANOIX7nhYFvLP5bWs5uMB2VEKWo3iT-fxDiMmpe0UNtkXhZQ_rfpTwYSrmfoCCO1AMXwU4CUFLRHTKvl2hNa3Yb6GLQt7NIyKhaWDLHU0of8JbCTRJnDrfaJ0DlGXuW3RO3BsRoJTyNArRCDVP5btsIJDIU-ugCqDzG1k8e58alGX2w17UcE5Wym-F022lVnFnoKzVAW-pyWBasbBgEiqxWYs-U_Xm8ZqYnS6GqBYwAsWKIIXzQGAivI0Ug0erOOfdGKAVlevJ2sKYpl98ScJ-d4OPoPjpfOiNE74lsntEjApCjThExZhhHVvWmwNuAV0tHFrqbF_8kj4IwQpvAnEVDEKrEMnS4JxoLaZrKBT4f2ymbtyBFu1y00F__0m00)
 
 c) Nhiệm vụ của từng lớp
   Registrar: Khởi tạo yêu cầu đóng đăng ký. Đảm bảo rằng đăng ký không còn đang mở để bắt đầu quy trình.

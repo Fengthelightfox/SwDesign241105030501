@@ -18,7 +18,36 @@ c) Nhiệm vụ của từng lớp
   Student: Đại diện cho các sinh viên trong hệ thống. Mỗi sinh viên được kết nối với các khóa học mà họ đã đăng ký.
   BillingSystem: Nhận thông tin thanh toán từ hệ thống đăng ký và thực hiện gửi hóa đơn tới sinh viên.
   
-d)
+d) Thuộc tính và quan hệ
+   Các thuộc tính
+   
+      Registrar
+         id: ID của người dùng hệ thống
+         name: Tên của người dùng hệ thống
+         
+      RegistrationSystem
+         isRegistrationOpen: Biến trạng thái cho biết đăng ký có đang mở hay không
+      CourseOffering
+         courseID: ID của khóa học
+         students[]: Danh sách sinh viên đăng ký khóa học
+         professor: Giảng viên phụ trách khóa học
+         minStudentCount: Số lượng sinh viên tối thiểu (3 sinh viên)
+      Schedule
+         courses[]: Danh sách các khóa học sinh viên đã đăng ký
+         alternates[]: Danh sách các khóa học thay thế
+      Student
+         studentID: ID của sinh viên
+         name: Tên sinh viên
+         schedule: Lịch trình của sinh viên trong kỳ học hiện tại
+      BillingSystem
+         transactionID: ID giao dịch
+         billingInfo: Thông tin thanh toán của sinh viên
+         Quan hệ giữa các lớp
+         Registrar — gửi yêu cầu đóng đăng ký → RegistrationSystem
+         RegistrationSystem — kiểm tra và xử lý các khóa học → CourseOffering
+         CourseOffering — tham gia vào lịch trình → Schedule
+         Schedule — chứa thông tin sinh viên → Student
+         RegistrationSystem — gửi thông tin thanh toán → BillingSystem
 2. Ca sử dụng
 3. Ca sử dụng
 4. Ca sử dụng

@@ -12,4 +12,11 @@ LAB 3: IDENTIFY DESIGN ELEMENTS
   - Mối quan hệ:
       +  PayrollController liên kết với IBankSystem để thực hiện hành động deposit.
       +  BankSystemProxy thực hiện IBankSystem.
-      +  IBankSystem phụ thuộc vào Paycheck và BankInformation trong quá trình hoạt động. 
+      +  IBankSystem phụ thuộc vào Paycheck và BankInformation trong quá trình hoạt động.
+   
+3. Design element to owning package map
+Phân    ại gói [package](https://www.planttext.com/api/plantuml/png/R94nRiCm34LtdOBmRdGF0YDfEsP8wnCmAj4ALII7f0mOHK-M8KVA5IerDUh40JZnlqTyGUVZQIMAh6dlJOVs4zy9gZNR3wTaDJ5wsE10B1Ly6O0yDkwx62XevhhEEulgOgXWkVG5R1f0WKbohJmcSO54e2NkdIMv4STyZA_jPrI4jStxMwyabs1kx53e3bxMboTDsa9TDxCIi80dz1uUu9KEYKIpCsEA-DyYAo-9UCZEbkDVhqayqgL4PbkDJB_tbHtrPCotML5uAz_o0m00__y30000)
+ải thích
+
+5. Architectural layers and their dependencies
+[Sơ đồ mô tả hệ thống](https://www.planttext.com/api/plantuml/png/R94nRiCm34LtdOBmRdGF0YDfEsP8wnCmAj4ALII7f0mOHK-M8KVA5IerDUh40JZnlqTyGUVZQIMAh6dlJOVs4zy9gZNR3wTaDJ5wsE10B1Ly6O0yDkwx62XevhhEEulgOgXWkVG5R1f0WKbohJmcSO54e2NkdIMv4STyZA_jPrI4jStxMwyabs1kx53e3bxMboTDsa9TDxCIi80dz1uUu9KEYKIpCsEA-DyYAo-9UCZEbkDVhqayqgL4PbkDJB_tbHtrPCotML5uAz_o0m00__y30000)

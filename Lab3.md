@@ -15,8 +15,21 @@ LAB 3: IDENTIFY DESIGN ELEMENTS
       +  IBankSystem phụ thuộc vào Paycheck và BankInformation trong quá trình hoạt động.
    
 3. Design element to owning package map
-Phân    ại gói [package](https://www.planttext.com/api/plantuml/png/R94nRiCm34LtdOBmRdGF0YDfEsP8wnCmAj4ALII7f0mOHK-M8KVA5IerDUh40JZnlqTyGUVZQIMAh6dlJOVs4zy9gZNR3wTaDJ5wsE10B1Ly6O0yDkwx62XevhhEEulgOgXWkVG5R1f0WKbohJmcSO54e2NkdIMv4STyZA_jPrI4jStxMwyabs1kx53e3bxMboTDsa9TDxCIi80dz1uUu9KEYKIpCsEA-DyYAo-9UCZEbkDVhqayqgL4PbkDJB_tbHtrPCotML5uAz_o0m00__y30000)
-ải thích
+Phân loại gói [package](https://www.planttext.com/api/plantuml/png/R94nRiCm34LtdOBmRdGF0YDfEsP8wnCmAj4ALII7f0mOHK-M8KVA5IerDUh40JZnlqTyGUVZQIMAh6dlJOVs4zy9gZNR3wTaDJ5wsE10B1Ly6O0yDkwx62XevhhEEulgOgXWkVG5R1f0WKbohJmcSO54e2NkdIMv4STyZA_jPrI4jStxMwyabs1kx53e3bxMboTDsa9TDxCIi80dz1uUu9KEYKIpCsEA-DyYAo-9UCZEbkDVhqayqgL4PbkDJB_tbHtrPCotML5uAz_o0m00__y30000)
+giải thích:
+  a) gói Middleware::Security::GUI Framework: giao diện bảo mật, có 2 phần tử thiết kế:
+    - LoginForm
+    - MainApplicationFor
+  b) gói Applications::Employee Activities: có 2 phần tử thiết kế:
+    - MainEmployeeForm
+    - TimecardForm
+  c) gói Applications::Payroll: quản lý chức năng bảng lương, có 2 phần tử thiết kế:
+    - TimecardController
+    - PayrollController
+  d) gói Business Services::Payroll Artifacts: quản lý dữ liệu bảng lương, có 1 phần tử thiết kế:
+    - Paycheck
+  e) gói Applications::System: thời gian hệ thống, có 1 phần tử:
+    - SystemClockInterface
 
-5. Architectural layers and their dependencies
+4. Architectural layers and their dependencies
 [Sơ đồ mô tả hệ thống](https://www.planttext.com/api/plantuml/png/R94nRiCm34LtdOBmRdGF0YDfEsP8wnCmAj4ALII7f0mOHK-M8KVA5IerDUh40JZnlqTyGUVZQIMAh6dlJOVs4zy9gZNR3wTaDJ5wsE10B1Ly6O0yDkwx62XevhhEEulgOgXWkVG5R1f0WKbohJmcSO54e2NkdIMv4STyZA_jPrI4jStxMwyabs1kx53e3bxMboTDsa9TDxCIi80dz1uUu9KEYKIpCsEA-DyYAo-9UCZEbkDVhqayqgL4PbkDJB_tbHtrPCotML5uAz_o0m00__y30000)

@@ -1,4 +1,5 @@
 I. Đăng Nhập
+---
   1. Tên UseCase: Login
   2. Actor: User, hệ thống xác thực
   3. Mục tiêu: Cho phép người dùng đăng nhập thông qua tài khoản và mật khẩu

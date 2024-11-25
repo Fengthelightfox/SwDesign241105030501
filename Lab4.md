@@ -6,16 +6,15 @@ I. Đăng Nhập
 
 **Tác nhân**: Người dùng bất kỳ
     
-## Tiền điều kiện:
-Người dùng phải có tên đăng nhập và mật khẩu hợp lệ.
+## Tiền điều kiện: 
+- Người dùng phải có tên đăng nhập và mật khẩu hợp lệ.
     
 ## Luồng cơ bản:
-
-Người dùng điều hướng đến biểu mẫu đăng nhập.
-Người dùng nhập tên đăng nhập và mật khẩu.
-Hệ thống xác thực tên đăng nhập và mật khẩu.
-Nếu thông tin xác thực hợp lệ, người dùng được cấp quyền truy cập vào hệ thống.
-Nếu thông tin xác thực không hợp lệ, hệ thống hiển thị thông báo lỗi.
+- Người dùng điều hướng đến biểu mẫu đăng nhập.
+- Người dùng nhập tên đăng nhập và mật khẩu.
+- Hệ thống xác thực tên đăng nhập và mật khẩu.
+- Nếu thông tin xác thực hợp lệ, người dùng được cấp quyền truy cập vào hệ thống.
+- Nếu thông tin xác thực không hợp lệ, hệ thống hiển thị thông báo lỗi.
     
 ## Hậu điều kiện:
 

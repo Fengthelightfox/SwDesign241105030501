@@ -7,7 +7,6 @@ I. Đăng Nhập
 **Tác nhân**: Người dùng bất kỳ
     
 ## Tiền điều kiện:
-
 Người dùng phải có tên đăng nhập và mật khẩu hợp lệ.
     
 ## Luồng cơ bản:

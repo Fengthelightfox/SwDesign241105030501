@@ -1,5 +1,5 @@
 # I. Đăng Nhập
----
+
 [Biểu đồ UML Đăng Nhập](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bTYSab-aOAIN_gn3GztpyrKI3cyCozT8UdXhgKb2jaFTszMKaWiLWWjJYtYAafDBadCIyz9LL1oodoukxbK8VVXhjMb2aSc7ca6QidBUBXhRO6IGZMNWa9fSMfoOZ5GeHzOKA7ayAeyL7KAPOSNWFIl1Te255XP2h77sH1PTyJXXSaA9HaFTszC9i488sGZF40kpGCRqWqa3sy1UUxmmdo5d8UxfsT2THXprN9nWVoeeAjh1tO444FPHa2s4PHjh62b408neoGp3sWhc0aqUd41oBnsX5AGMIXgaHGvfEQbW48U0000__y30000)
 ---
 **Tên ca sử dụng**: Đăng nhập

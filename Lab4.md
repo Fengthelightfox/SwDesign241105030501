@@ -1,13 +1,11 @@
 I. Đăng Nhập
 ---
 [Biểu đồ UML Đăng Nhập](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bTYSab-aOAIN_gn3GztpyrKI3cyCozT8UdXhgKb2jaFTszMKaWiLWWjJYtYAafDBadCIyz9LL1oodoukxbK8VVXhjMb2aSc7ca6QidBUBXhRO6IGZMNWa9fSMfoOZ5GeHzOKA7ayAeyL7KAPOSNWFIl1Te255XP2h77sH1PTyJXXSaA9HaFTszC9i488sGZF40kpGCRqWqa3sy1UUxmmdo5d8UxfsT2THXprN9nWVoeeAjh1tO444FPHa2s4PHjh62b408neoGp3sWhc0aqUd41oBnsX5AGMIXgaHGvfEQbW48U0000__y30000)
-
-Use Case: Đăng nhập
-
-Actors:
+**Tên ca sử dụng**: Đăng nhập
+**Tác nhân**:
     - Người dùng bất kỳ
     
-Điều kiện tiên quyết:
+## Tiền điều kiện:
     - Người dùng phải có tên đăng nhập và mật khẩu hợp lệ.
     
 Luồng cơ bản:
@@ -17,14 +15,10 @@ Luồng cơ bản:
     - Nếu thông tin xác thực hợp lệ, người dùng được cấp quyền truy cập vào hệ thống.
     - Nếu thông tin xác thực không hợp lệ, hệ thống hiển thị thông báo lỗi.
     
-Điều kiện sau:
+## Hậu điều kiện:
     - Người dùng hoặc là đã đăng nhập vào hệ thống hoặc nhận được thông báo lỗi.
     
-Giao diện người dùng:
-    - Biểu mẫu đăng nhập: Gồm các trường nhập liệu cho tên đăng nhập và mật khẩu, cùng với nút "Đăng nhập".
-    - Thông báo lỗi: Hiển thị khi tên đăng nhập hoặc mật khẩu không hợp lệ.
-    
-Giải thích thiết kế:
+## Giải thích thiết kế:
     - Thiết kế này đảm bảo quy trình đăng nhập rõ ràng và hiệu quả.
     - Đảm bảo người dùng phải đăng nhập thành công mới sử dụng được.
     

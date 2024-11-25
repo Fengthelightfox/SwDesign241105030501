@@ -1,14 +1,25 @@
 I. Đăng Nhập
 ---
-  1. Tên UseCase: Login
-  2. Actor: User, hệ thống xác thực
-  3. Mục tiêu: Cho phép người dùng đăng nhập thông qua tài khoản và mật khẩu
-  4. Luồng sự kiện:
-      - Người dùng mở form đăng nhập
-      - Người dùng nhập tài khoản, mật khẩu vào form và bấm đăng nhập
-      - Hệ thống tiến hành kiểm thử: Nếu hợp lệ sẽ chuyển tới trang chính, nếu không hợp lệ thì báo lỗi
-      - Luồng phụ: Người dùng không nhập gì cả, hệ thống yêu cầu nhập để xác thực
-      - Kết quả: Người dùng đăng nhập thành công hoặc nhận thông báo lỗi
+(Biểu đồ UML Đăng Nhập)[https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bTYSab-aOAIN_gn3GztpyrKI3cyCozT8UdXhgKb2jaFTszMKaWiLWWjJYtYAafDBadCIyz9LL1oodoukxbK8VVXhjMb2aSc7ca6QidBUBXhRO6IGZMNWa9fSMfoOZ5GeHzOKA7ayAeyL7KAPOSNWFIl1Te255XP2h77sH1PTyJXXSaA9HaFTszC9i488sGZF40kpGCRqWqa3sy1UUxmmdo5d8UxfsT2THXprN9nWVoeeAjh1tO444FPHa2s4PHjh62b408neoGp3sWhc0aqUd41oBnsX5AGMIXgaHGvfEQbW48U0000__y30000]
+Use Case: Đăng nhập
+Actors:
+  - Người dùng bất kỳ
+Điều kiện tiên quyết:
+  - Người dùng phải có tên đăng nhập và mật khẩu hợp lệ.
+Luồng cơ bản:
+  - Người dùng điều hướng đến biểu mẫu đăng nhập.
+  - Người dùng nhập tên đăng nhập và mật khẩu.
+  - Hệ thống xác thực tên đăng nhập và mật khẩu.
+  - Nếu thông tin xác thực hợp lệ, người dùng được cấp quyền truy cập vào hệ thống.
+  - Nếu thông tin xác thực không hợp lệ, hệ thống hiển thị thông báo lỗi.
+Điều kiện sau:
+  - Người dùng hoặc là đã đăng nhập vào hệ thống hoặc nhận được thông báo lỗi.
+Giao diện người dùng:
+  - Biểu mẫu đăng nhập: Gồm các trường nhập liệu cho tên đăng nhập và mật khẩu, cùng với nút "Đăng nhập".
+  - Thông báo lỗi: Hiển thị khi tên đăng nhập hoặc mật khẩu không hợp lệ.
+Giải thích thiết kế:
+  - Thiết kế này đảm bảo quy trình đăng nhập rõ ràng và hiệu quả.
+  - Đảm bảo người dùng phải đăng nhập thành công mới sử dụng được.
 II. Maintain Timecard:
   1. Tên Usecase: Maintain Timecard
   2. Actor: Employee, Project Management

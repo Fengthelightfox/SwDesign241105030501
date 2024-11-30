@@ -1,7 +1,9 @@
 # I. Hệ thống con trong run Payroll
 ---
   1. System Clock
+     
     Mục đích: Xác định thời gian để khởi động quy trình trả lương vào các ngày cụ thể.
+    
     Thành phần:
     Phương thức start(): Bắt đầu tiến trình trả lương.
     Kết nối với SystemClockInterface.

@@ -17,6 +17,7 @@
     Phương thức createPaycheck(amount): Tạo phiếu lương với số tiền tương ứng.
     Tương tác với các hệ thống con khác: Employee, PrintService, và BankSystem.
 ![subsystem Controller](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bT1Od9sOdggGa1YPL5-JevpVbu9Y4ujKgZcKW22v9p4ucASiX1GL9e7LQ2XYIISMGmKJKciH15CBafDB4a5IYHdf2PdQoJcvfVcbLWffENa9vP0rDLorN8vfEQbW5m70000__y30000)
+
   3. Employee System
      
     Mục đích: Cung cấp dữ liệu về nhân viên để tính lương.
@@ -24,17 +25,21 @@
     Phương thức getTimecardInfo(): Lấy thông tin bảng chấm công.
     Phương thức getPOInfo(): Lấy thông tin đơn đặt hàng (cho nhân viên hưởng lương theo doanh số).
     Phương thức calculatePay(): Tính lương dựa trên thông tin đã lấy được.
+![Employee](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bT1Od9sOdggGa1YPL5-JevpVbu9Y4ujKgZcKW22v9p4ucASiX1GL9e7LQ2XYIISMGmKJKciH15CBafDB4a5IYHdf2PdQoJcvfVcbLWffENa9vP0rDLorN8vfEQbW5m70000__y30000)
     
   4. Timecard
      
     Mục đích: Lưu trữ thông tin chấm công của nhân viên.
     Thành phần:
     Cung cấp dữ liệu về số giờ làm việc, số ngày làm việc.
+![Timecard](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bT1Od9sOdggGaXcRcfoOb6AGZMN0X0avoGM5wCBGa1wQWb8t2Mr934pfrX34onLorNBvP2Qbm8o4W000F__0m00)
+    
   5. Purchase Order (PO)
      
     Mục đích: Lưu trữ và cung cấp thông tin đơn đặt hàng của nhân viên hưởng lương theo doanh số.
     Thành phần:
     Dữ liệu đơn hàng và doanh thu.
+![PurchaseOrder](https://www.planttext.com/api/plantuml/png/UhzxlqDnIM9HIMbk3bT1Od9sOdggGa1fKN96Od6gVr5AQf52DPS242Jd91ONOvM1WFJK4h2WIsf9OcPEiOOcMAwMgvRB8JKl1MGw0000__y30000) 
   6. Paycheck
 
     Mục đích: Đại diện cho phiếu lương của nhân viên.
@@ -42,17 +47,22 @@
     Số tiền được trả.
     Thông tin nhân viên.
     Phương thức thanh toán (in phiếu hoặc chuyển khoản ngân hàng).
+![Paycheck]()
+    
   7. Print Service
       
     Mục đích: In phiếu lương cho nhân viên.
     Thành phần:
     Phương thức print(Paycheck): In phiếu lương ra giấy.
     Kết nối với Printer.
+![PrintService]()
+    
   8. Printer
       
     Mục đích: Đảm bảo việc in phiếu lương từ hệ thống.
     Thành phần:
     Giao tiếp với PrintService.
+![Print]()
     
   9. Bank System
       
@@ -60,3 +70,4 @@
     Thành phần:
     Phương thức deposit(Paycheck, BankInformation): Gửi tiền vào tài khoản ngân hàng của nhân viên.
     Phương thức sendTransaction(): Xử lý giao dịch gửi tiền.
+![Bank]()

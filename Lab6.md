@@ -63,7 +63,7 @@
     Truy xuất thông tin mã nhân viên.
     
 ---
-## Bank System
+## II. Bank System
 
 ![Bank System](https://www.planttext.com/api/plantuml/png/X5HBJiCm4Dtd55ucKdk12bMbH1ML448gOZ-rfyZ2dygU52h4oLXm9Av0dBY93HGsJlpcpSoRJ_Bv_h7m18uQhGgkm7ks1FEqENf2pLuBnjZUMOxUtpim7ZX9QqeQtsSiCLGpjhHM8PZWU00b1H1UScuRGoNqpzj6Rz7Ds8QSD8-vooDIPDT889K_wnHfmQbJiqEtQepmvSvP7Oqd-eIH_G61xkyhPO6gh8nUYK7NYjzGUsWy9t_2kkxLBMd6mZbXQCHuhG8nHYZUYjZYAARhx_JNkC6m1GM6OvGO4Fji0kMgyMGrkjYnPSyhgv7916vbA_bRZGzMYc3b3iKVvd4ArrO9T27oa7CeueJqLV1uMzTf2GOqfdTk3RKzNfkTJU0aeG-vRgIdYmZCnuJ9XFgSoHhcQRF2EkPnd-aGmu12Udn1tb3Nm6GN7HxG-GmTf0mp_MU4YK8VwqggcAUBTbUlkWbAXI5FyXLEfyEsv-YuMQU5Qi5XK0cMxdOU8hKKYtPrmt_W2m00__y30000)
 
@@ -75,3 +75,15 @@
    Hệ thống đảm bảo tính chính xác khi liên kết khách hàng, quản lý giao dịch, và xuất báo cáo.
    
 ---
+## III. Print Service
+
+![Print Service](https://www.planttext.com/api/plantuml/png/R5DBJiCm4Dtd55wc4hr0X511tGGX18fWxpX3SULFPOyh2k9aB3WILy1EwiHEkhFVFC-yDpF--_dTMAG6dHG54zHQycIumWRCaJCWNmKXnBfMSkpnUzsMUzrM9DvM5RdJMW1LWSceOY1IPhsjI8CUsENC7GH6WnITNV26Gw0T3DU68_-4HRwh63nLf5QOfnVSugqG_f4jVUJ1Nw-Zh9lYkqYzFZjmWzErBs0NR9-ETjqbvw-QTo5iGEhZKc72y7OVuQDlocfACHFYaL76b2K0dMPEWiAARC-dW6R-0s3xTgRz6qPNNfhI37I7ZYAS1v8dYZv6jL74e3QAooKZHm4fmBJ2ti84KOVlsbJanO8vTwbnKb9pAgSj6Ai6rb3H-LDUJL6vA4OPrkfDBziHvPTU-TJHsLooRx1U9wjI95iJ0-7HE4CFZcCQM-N1tkO6L1S-spy0003__mC0)
+
+### 1. Mô tả hệ thống in tài liệu
+
+   User: Đại diện cho người gửi tài liệu.
+   PrintJob: Công việc in, được ưu tiên xử lý dựa trên thuộc tính priority.
+   PrintQueue: Quản lý hàng đợi in, xử lý công việc theo thứ tự ưu tiên.
+
+---
+
